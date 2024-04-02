@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Music Mixer Project</title>
 </head>
     <body>
@@ -19,19 +20,33 @@
         <main class="grid-con">
 
         </main>
-
-
-        <div class="dropzone">
-    
+        <div class="container">
+            <button id="pausePlayButton">
+                <img src="images/pause_icon.png" class="pause-play-buttons">
+            </button>
+            <button onclick="location.reload();">
+                <!--   <img src="refresh page">    -->
+                Reset
+            </button>
+            <div class="dropzone-container" id = "dropzoneContainer">
+                <div class="dropzone"></div>
+                <div class="dropzone"></div>
+                <div class="dropzone"></div>
+                <div class="dropzone"></div>
+            </div>
+        
+            <div id="audioList">
+            <img src="images/Singer1.svg" alt="audio_files/audio1.mp3" class="audio-item" draggable="true"> 
+            <img src="images/Singer2.svg" alt="audio_files/audio2.mp3" class="audio-item" draggable="true"> 
+            <img src="images/Singer3.svg" alt="audio_files/audio3.mp3" class="audio-item" draggable="true">
+            <img src="images/Singer4.svg" alt="audio_files/audio4.mp3" class="audio-item" draggable="true">
+            </div>
         </div>
-        <div id="audioList">
-         <img src="images/Singer1.svg" alt="audio_files/audio1.mp3"> 
-        </div>
-
 
         <footer>
             
         </footer class="grid-con">
 
+        <script src="js/main.js"></script>
     </body>
 </html>
